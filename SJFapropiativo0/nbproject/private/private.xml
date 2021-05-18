@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Andres/docs/CICLO%206/Sistemas%20Operativos/ProyectoSO/SJFapropiativo/SJFapropiativo/SJFapropiativo0/src/GUI/GUIPlanificacion.java</file>
-            <file>file:/D:/Andres/docs/CICLO%206/Sistemas%20Operativos/ProyectoSO/SJFapropiativo/SJFapropiativo/SJFapropiativo0/src/CLASES/Proceso.java</file>
-            <file>file:/D:/Andres/docs/CICLO%206/Sistemas%20Operativos/ProyectoSO/SJFapropiativo/SJFapropiativo/SJFapropiativo0/src/GUI/IngresoDatos.java</file>
-            <file>file:/D:/Andres/docs/CICLO%206/Sistemas%20Operativos/ProyectoSO/SJFapropiativo/SJFapropiativo/SJFapropiativo0/src/GUI/VentanaInicial.java</file>
-            <file>file:/D:/Andres/docs/CICLO%206/Sistemas%20Operativos/ProyectoSO/SJFapropiativo/SJFapropiativo/SJFapropiativo0/src/CLASES/RangosProceso.java</file>
-            <file>file:/D:/Andres/docs/CICLO%206/Sistemas%20Operativos/ProyectoSO/SJFapropiativo/SJFapropiativo/SJFapropiativo0/src/CLASES/Planificacion.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/CLASES/Proceso.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/Logica/LProceso.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/GUI/VentanaInicial.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/GUI/IngresoDatos.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/CLASES/Planificacion.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/Logica/LPlanificacion.java</file>
+            <file>file:/Users/diegomerino/Documents/UTPL/Abril_Agosto_2021/Sistemas_Operativos/PB/Proyecto/ProyectoSJF/SJFapropiativo0/src/CLASES/RangosProceso.java</file>
         </group>
     </open-files>
 </project-private>

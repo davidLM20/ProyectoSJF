@@ -215,7 +215,7 @@ public class IngresoDatos extends javax.swing.JFrame {
             this.jTextFieldTllegada.setText("0");
         }
         ArrayProcesos = ObjLogProceso.AgregarProcesos(Nombres[contN], Integer.parseInt(this.jTextFieldTllegada.getText()), Integer.parseInt(this.jTextFieldRafaga.getText()));
-
+        contN++;
         try {
             ListarProcesos();
         } catch (ClassNotFoundException ex) {
@@ -233,7 +233,7 @@ public class IngresoDatos extends javax.swing.JFrame {
 
     private void jButtonAnadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAnadirMouseClicked
         // TODO add your handling code here:
-        contN++;
+        //contN++;
     }//GEN-LAST:event_jButtonAnadirMouseClicked
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked

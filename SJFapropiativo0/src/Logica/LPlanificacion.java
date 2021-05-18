@@ -25,6 +25,7 @@ public class LPlanificacion {
     int t = 0;
     int cont = 0;
     //int i = 0;
+    DecimalFormat df = new DecimalFormat("#.00");
     public static ArrayList<RangosProceso> ArrayRP = new ArrayList<RangosProceso>();
     Planificacion ObjPlan = new Planificacion();
 
@@ -84,17 +85,17 @@ public class LPlanificacion {
 
                 ObjRp.setNombre(MenorRaf.getNombre());
                 ObjRp.setNizq(t);
-                System.out.println("index parte izq          " + cont);
-                System.out.println("numero derecho: " + ObjRp.getNder());
+                System.out.println("Index parte izq          " + cont);
+                System.out.println("Numero derecho: " + ObjRp.getNder());
 
                 //bandera = true;
                 if (t != 0) {
-                    System.out.println("agrego parte derecha -----");
+                    System.out.println("Agrego parte derecha -----");
 
                     //ObjRp.setNder(t);
                     ArrayRP.get(cont - 1).setNder(t);
 
-                    System.out.println("izquierdo anterior  " + ArrayRP.get(cont - 1).getNizq());
+                    System.out.println("Izquierdo anterior  " + ArrayRP.get(cont - 1).getNizq());
 
                 } else {
                 }
@@ -128,9 +129,9 @@ public class LPlanificacion {
         ArrayRP.get(cont - 1).setNder(t);
 
         for (RangosProceso Proces : ArrayRP) {
-            System.out.println("numero izquiero de proceso:  " + Proces.getNombre() + "  es:");
+            System.out.println("Numero izquiero de proceso:  " + Proces.getNombre() + "  es:");
             System.out.println(Proces.getNizq());
-            System.out.println("numero derecho de proceso:  " + Proces.getNombre() + "  es:");
+            System.out.println("Numero derecho de proceso:  " + Proces.getNombre() + "  es:");
             System.out.println(Proces.getNder());
         }
 
@@ -167,26 +168,30 @@ public class LPlanificacion {
 
         }
         for (Proceso Proc : Procesos) {
-            System.out.println(" tiempo espera " + Proc.getNombre() + ":  " + Proc.getTespera());
-            System.out.println(" tiempo retorno " + Proc.getNombre() + ":  " + Proc.getTretorno());
+            System.out.println("Tiempo espera " + Proc.getNombre() + ":  " + Proc.getTespera());
+            System.out.println("Tiempo retorno " + Proc.getNombre() + ":  " + Proc.getTretorno());
         }
 
         return Procesos;
     }
 
     public Planificacion Calculo(ArrayList<Proceso> ArrayP) {
+        
         double sumaE = 0;
         double sumaR = 0;
-
+        string promTEFormat = "", promTRFormat = "";
+        
         for (Proceso Proc : ArrayP) {
             sumaE += Proc.getTespera();
             sumaR += Proc.getTretorno();
         }
-        ObjPlan.setPromTE(sumaE / ArrayP.size());
-        ObjPlan.setPromTR(sumaR / ArrayP.size());
+        promTEFormat = df.format(sumaE / ArrayP.size());
+        promTRFormat = df.format(sumaR / ArrayP.size())
+        ObjPlan.setPromTE(Double.valueOf(promTEFormat));
+        ObjPlan.setPromTR(Double.valueOf(promTRFormat));
 
-        System.out.printf("%npromedio espera %.2f", ObjPlan.getPromTE());
-        System.out.printf("%npromedio espera   %.2f", ObjPlan.getPromTR());
+        System.out.printf("%nPromedio espera %.2f", ObjPlan.getPromTE());
+        System.out.printf("%nPromedio espera %.2f", ObjPlan.getPromTR());
         System.out.println("   ");
         return ObjPlan;
     }
